@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправить поздравление с Днём Рождения</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #ff6b6b;
+            text-align: center;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #ff5252;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Отправить поздравление с Днём Рождения!</h1>
+    
+    <form action="https://formsubmit.co/simonianmarina866@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Новое поздравление с ДР!">
+        <input type="hidden" name="_next" value="https://вашлогин.github.io/birthday-congrats.html">
+        
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="message">Поздравление:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
